@@ -22,27 +22,27 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ### These are the list of available endpoints
 
-GET|HEAD  | api/users             | users.index   | App\Http\Controllers\UserController@index     | api        |
+    GET|HEAD  | api/users             
 
-POST      | api/users             | users.store   | App\Http\Controllers\UserController@store     | api        |
+    POST      | api/users             
 
-POST      | api/users/list        |               | App\Http\Controllers\UserController@usersList | api        |
+    POST      | api/users/list - Get users list
 
-POST      | api/users/search      |               | App\Http\Controllers\UserController@search    | api        |
+    POST      | api/users/search - Search user
 
-GET|HEAD  | api/users/{user}      | users.show    | App\Http\Controllers\UserController@show      | api        |
+    GET|HEAD  | api/users/{user}      
 
-PUT|PATCH | api/users/{user}      | users.update  | App\Http\Controllers\UserController@update    | api        |
+    PUT|PATCH | api/users/{user}      
 
-DELETE    | api/users/{user}      | users.destroy | App\Http\Controllers\UserController@destroy   | api        |
+    DELETE    | api/users/{user}      
 
-GET|HEAD  | api/users/{user}/edit | users.edit    | App\Http\Controllers\UserController@edit      | api        |
+    GET|HEAD  | api/users/{user}/edit
 
 ### Parameters of adding user
 
     name, email, password and password_confirmation
 
-### Parameters of updating user - can one of the following
+### Parameters of updating user - can be one of the following
 
     name, email, password and password_confirmation _method:PUT
 
