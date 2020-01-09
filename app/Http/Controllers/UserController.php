@@ -166,10 +166,14 @@ class UserController extends Controller
                     ->orWhere('email', 'like', "%{$search}%")
                     ->orWhere('created_at', 'like', "%{$search}%");
             });
+
+            $users = $query->paginate($length);
+
+            return UserCollection::collection($users);
         }
 
-        $users = $query->paginate($length);
-
-        return UserCollection::collection($users);
+        return response()->json([
+            'error' => 'Not found'
+        ]);
     }
 }
