@@ -30,13 +30,13 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
     POST      | api/users/search - Search user
 
-    GET|HEAD  | api/users/{user}      
+    GET|HEAD  | api/users/{id}      
 
-    PUT|PATCH | api/users/{user}      
+    PUT|PATCH | api/users/{id}      
 
-    DELETE    | api/users/{user}      
+    DELETE    | api/users/{id}      
 
-    GET|HEAD  | api/users/{user}/edit
+    GET|HEAD  | api/users/{id}/edit
 
 ### Parameters of adding user
 
